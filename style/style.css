@@ -1,12 +1,27 @@
 body {
     font-family: Arial, sans-serif;
+    color: #ffffff;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    background: url("./pivo.png") no-repeat;
+    background-size: cover;
+    align-content: center;
 }
 
 .container {
+    display: flex;
+    justify-content: space-between;
     width: 80%;
-    padding: 10px;
+    margin: 10em 8em 0 8em;
+    gap: 10em;
+    background: #000000;
+    opacity: 0.9;
+    border-radius: 24px;
+    padding: 2em;
+}
+.calculadora {
+    width: 100%;
 }
 
 h1 {
@@ -21,20 +36,30 @@ label {
     display: block;
     margin-bottom: 5px;
 }
+#system, #culture_type  {
+    width: 80%;
+    border-radius: 12px 0 0 12px;
+}
 
-#xVezes {
-    width: 5%;
-    
+#add_system, #add_type {
+    border-radius: 0 12px 12px 0;
+}
+
+#xVezes, #area, #cost {
+    width: 76%;
+    border-radius: 12px;
 }
 
 #frequencia {
-    width: 10%;
+    width: 18%;
+    border-radius: 12px;
 }
 select {
     width: 15%;
     padding: 8px;
     margin-bottom: 5px;
 }
+
 input {
     width: 10%;
     padding: 8px;
@@ -42,7 +67,7 @@ input {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 9px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -53,10 +78,24 @@ button:hover {
     background-color: #45a049;
 }
 
+.button {
+    margin-left: 30%;
+    border-radius: 12px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.tabela {
+    width: 100%;
+}
+
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse;  
     margin-top: 20px;
+    color: #000000;
 }
 
 table, th, td {
