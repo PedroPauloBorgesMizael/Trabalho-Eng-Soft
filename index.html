@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <div class="container">
+    <section class="container">
         <section class="calculadora">
             <h1>Calculadora Irrigação</h1>
             <form id="calcSystem">
                 <div class="form-group">
-                    <label for="system">Irrigation System</label>
-                    <select id="system" name="system">
-                        <option value="gotejamento">Gotejamento</option>
-                        <option value="aspersao">Aspersão</option>
-                        <option value="microaspersao">Microaspersão</option>
-                        <option value="pivo_central">Pivo Central</option>
-                    </select><button id="add_system" name="system">+</button>
+                    <label for="system">Sistema de Irrigação</label>
+                    <select id="sistemaDeIrrigacao" name="sistema">
+                        <option id="gotejamento">Gotejamento</option>
+                        <option id="aspersao">Aspersão</option>
+                        <option id="microaspersao">Microaspersão</option>
+                        <option id="pivo_central">Pivo Central</option>
+                    </select><button id="add_system" name="sistema">+</button>
                 </div>
                 <div class="form-group">
                     <label for="culture_type">Tipo de Cultura:</label>
@@ -43,15 +43,19 @@
                         <option value="mes">Mensal</option>
                     </select>
                 </div>
+                <div class="form-group"></div>
+                <label for="area">Pressao da Água (kgf/cm²):</label>
+                <input type="number" id="pressao" name="pressao" required>
+                </div>
                 <div class="form-group">
                     <label for="area">Área de Cultivo(ha):</label>
                     <input type="number" id="area" name="area" required>
                 </div>
                 <div class="form-group">
                     <label for="cost">Custo Água(m³):</label>
-                    <input type="number" id="cost" name="cost" required>
+                    <input type="number" id="custo" name="custo" required>
                 </div>
-                <button type="button" class="button" onclick="calculate()">Calcular</button>
+                <button type="button" id="calculadora" class="button">Calcular</button>
             </form>
         </section>
         <section class="tabela">
@@ -75,16 +79,15 @@
                 </tbody>
             </table>
         </section>
-    </div>
+    </section>
 
-    <ul>
-        <a href="/bd.html">
-            <li>Base de Dados</li>
-        </a>
-    </ul>
+    <footer>
+                <a class="bd" href="/bd.html">
+                    <button class="button banco">Banco de Dados</button>
+                </a>
+    </footer>
 
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>

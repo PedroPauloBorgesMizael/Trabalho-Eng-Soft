@@ -20,6 +20,7 @@ body {
     border-radius: 24px;
     padding: 2em;
 }
+
 .calculadora {
     width: 100%;
 }
@@ -28,15 +29,11 @@ h1 {
     text-align: center;
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
 label {
     display: block;
     margin-bottom: 5px;
 }
-#system, #culture_type  {
+#sistemaDeIrrigacao, #culture_type  {
     width: 80%;
     border-radius: 12px 0 0 12px;
 }
@@ -45,7 +42,7 @@ label {
     border-radius: 0 12px 12px 0;
 }
 
-#xVezes, #area, #cost {
+#xVezes, #area, #custo, #pressao {
     width: 76%;
     border-radius: 12px;
 }
@@ -54,6 +51,7 @@ label {
     width: 18%;
     border-radius: 12px;
 }
+
 select {
     width: 15%;
     padding: 8px;
@@ -85,10 +83,14 @@ button:hover {
 
 h2 {
     text-align: center;
+    color: #000000;
 }
 
 .tabela {
     width: 100%;
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 10px;
 }
 
 table {
@@ -109,4 +111,27 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    padding: 1.5em 0;
+    opacity: 0.9;
+}
+
+.bd {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.banco {
+    width: 100%;
+    padding: 1em 2em;
 }
