@@ -33,7 +33,7 @@ label {
     display: block;
     margin-bottom: 5px;
 }
-#sistemaDeIrrigacao, #culture_type  {
+#sistemaDeIrrigacao, #tipoDeCultura {
     width: 78%;
     border-radius: 12px;
 }
