@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-    text-align: center;
+    margin-left: 30%;
 }
 
 label {
@@ -34,12 +34,8 @@ label {
     margin-bottom: 5px;
 }
 #sistemaDeIrrigacao, #culture_type  {
-    width: 80%;
-    border-radius: 12px 0 0 12px;
-}
-
-#add_system, #add_type {
-    border-radius: 0 12px 12px 0;
+    width: 78%;
+    border-radius: 12px;
 }
 
 #xVezes, #area, #custo, #pressao {
