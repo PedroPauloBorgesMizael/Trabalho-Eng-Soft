@@ -1,28 +1,29 @@
 document.getElementById('calculadora').addEventListener('click', function () {
-
+    
+    let frequencia = document.getElementById('frequencia').value; // Verifica a frequência
     const sistema = document.getElementById('sistemaDeIrrigacao').value;
     const cultura = document.getElementById('tipoDeCultura').value;
-    const frequencia = document.getElementById('xVezes').value;
     const pressao = document.getElementById('pressao').value;
     const area = document.getElementById('area').value;
     const custo = document.getElementById('custo').value;
-
+    const vezesPorPeriodo = parseInt(document.getElementById('frequenciaInput').value);
+                                                                                                                 
     let litrosAguaPorHectare = 0;
     let fatorCultura = 1;
-
+    
     // Ajuste do consumo de água com base no sistema de irrigação
     switch (sistema) {
         case 'Gotejamento':
-            litrosAguaPorHectare = 5000; 
+            litrosAguaPorHectare = 800; 
             break;
         case 'Aspersão':
-            litrosAguaPorHectare = 4000; 
+            litrosAguaPorHectare = 2400; 
             break;
         case 'Microaspersão':
-            litrosAguaPorHectare = 2000;
+            litrosAguaPorHectare = 1200;
             break;
         case 'Pivo Central':
-            litrosAguaPorHectare = 3000; 
+            litrosAguaPorHectare = 4200; 
             break;
         default:
             alert('Selecione um sistema de irrigação válido.');
@@ -48,8 +49,24 @@ document.getElementById('calculadora').addEventListener('click', function () {
             return;
     }
 
+    // Ajusta a frequência de irrigação com base na seleção diária ou semanal
+    if (frequencia === 'diario') {
+        frequencia = vezesPorPeriodo; // Se for diário, considera o valor de vezesPorPeriodo diretamente
+    } else if (frequencia === 'semanal') {
+        if (vezesPorPeriodo < 1 || vezesPorPeriodo > 7) {
+            alert('Insira uma frequência menor ou igual a 7.');
+            return;
+        } else {
+            frequencia = vezesPorPeriodo / 7; // Se for semanal, considera os dias a serem regados por semana
+        }
+    } else {
+        alert('Selecione uma frequência válida.');
+        return;
+    }
+    
     // Cálculo do consumo de água
-    const consumoLitros = litrosAguaPorHectare * pressao * area * frequencia * fatorCultura;
+    var consumoLitros = pressao * area * frequencia * fatorCultura * 10000;
+    const tempodeIrrigação = consumoLitros / litrosAguaPorHectare;
     const consumoM3 = consumoLitros / 1000;
 
     // Cálculo do custo total
@@ -59,6 +76,7 @@ document.getElementById('calculadora').addEventListener('click', function () {
         <tr>
             <td>${consumoLitros.toFixed(2)} L</td>
             <td>${consumoM3.toFixed(2)} m³</td>
+            <td>${tempodeIrrigação.toFixed(2)} min</td>
             <td>R$ ${custoTotal.toFixed(2)}</td>
         </tr>
     `;

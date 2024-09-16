@@ -33,11 +33,15 @@
                     </select>
                 </div>
                 <div>
-                    <label for="xVezes">Frequência de Irrigação Diária:</label>
-                    <input type="number" id="xVezes" name="xVezes" required>
+                    <label for="xVezes">Frequência de Irrigação:</label>
+                    <input type="number" id="frequenciaInput" name="xVezes" required>
+                    <select id="frequencia">
+                        <option value="diario">Diário</option>
+                        <option value="semanal">Semanal</option>
+                    </select>
                 </div>
                 <div>
-                <label for="area">Pressao da Água (kgf/cm²):</label>
+                <label for="area">Quantidade de Água (mm):</label>
                 <input type="number" id="pressao" name="pressao" required>
                 </div>
                 <div>
@@ -56,12 +60,13 @@
             <table>
                 <thead>
                     <tr>
-                        <th colspan="2">Água Utilizada</th>
-                        <th rowspan="2">Gasto(R$)</th>
+                        <th colspan="3">Água Utilizada</th>
+                        <th rowspan="3">Gasto(R$)</th>
                     </tr>
                     <tr>
                         <th>Litros</th>
                         <th>m³</th>
+                        <th id="tmp">Tempo Médio (min)</th>
                     </tr>
                     <tr>
 

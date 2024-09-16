@@ -35,18 +35,24 @@ label {
 }
 #sistemaDeIrrigacao, #tipoDeCultura {
     width: 78%;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 #xVezes, #area, #custo, #pressao {
     width: 76%;
-    border-radius: 12px;
+    border-radius: 8px;
+}
+
+#frequenciaInput {
+    width: 18%;
+    border-radius: 8px;
 }
 
 #frequencia {
     width: 18%;
-    border-radius: 12px;
+    border-radius: 8px;
 }
+
 
 select {
     width: 15%;
@@ -74,7 +80,7 @@ button:hover {
 
 .button {
     margin-left: 30%;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 h2 {
@@ -121,6 +127,10 @@ footer {
     opacity: 0.9;
 }
 
+#tmp{
+    width: 30%;
+}
+
 .bd {
     text-decoration: none;
     color: #ffffff;
@@ -130,4 +140,40 @@ footer {
 .banco {
     width: 100%;
     padding: 1em 2em;
+}
+
+
+
+
+div#abas nav a{ 
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid;
+    margin: 2px;
+    color: rgb(240, 240, 240);
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+div#abas nav a:hover{ 
+    background-color: #2e2e2e;
+}
+div#abas div {
+    display:none;
+}
+div#abas div:target{
+    display: block;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    min-height: 400px;
+    margin: 10em 8em 0 8em;
+    gap: 10em;
+    background: #000000;
+    opacity: 0.9;
+    border-radius: 24px;
+    padding: 2em;
 }
