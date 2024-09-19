@@ -1,107 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Cálculo do Consumo de Água</title>
-      <link rel="stylesheet" href="./style/style.css">
-      <div>
-         <a href="/index.html">
-            <li>Página Inicial</li>
-         </a>
-  </head>
-  
 
-   <body>
-      <section class="container2">
-         <div id="abas">
-            <nav class="list">
-               <a href="#tableIrrigation">Sistemas de Irrigação</a>
-               <a href="#usersLogin">Usuários Cadastrados</a>
-               <a href="#culturas">Culturas de Plantio</a>
-            </nav>
-            <div id="tableIrrigation">
-               <table>
-                  <thead>
-                     <tr>
-                        <th colspan="2">Método de Irrigação</th>
-                     </tr>
-                     <tr>
-                        <th>Sistema de Irrigação</th>
-                        <th>Vazao (L/h)</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th>Gotejamento</th>
-                        <th id="vGoteja">15</th>
-                     </tr>
-                     <tr>
-                        <th>Microaspersão</th>
-                        <th id="vMicro">120</th>
-                     </tr>
-                     <tr>
-                        <th>Pivô Central</th>
-                        <th id="vPivo">9500</th>
-                     </tr>
-                     <tr>
-                        <th>Aspersor</th>
-                        <th id="vAspersor">900</th>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div id="usersLogin">
-               <table>
-                  <thead>
-                     <tr>
-                        <th>Usuário</th>
-                        <th>Senha</th>
-                        <th>Permissões</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th>padrão</th>
-                        <th></th>
-                     </tr>
-                  
-                  </tbody>
-               </table>
-            </div>
-            <div id="culturas">
-               <table>
-                  <thead>
-                     <tr>
-                        <th>Usuário</th>
-                        <th>Senha</th>
-                        <th>Permissões</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th>padrão</th>
-                        <th></th>
-                     </tr>
-                     <tr>
-                        <th>Microaspersão</th>
-                        <th>120</th>
-                     </tr>
-                     <tr>
-                        <th>Pivô Central</th>
-                        <th>9500</th>
-                     </tr>
-                     <tr>
-                        <th>Aspersor</th>
-                        <th>900</th>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         
-      
-         
-      </section>
-   </body>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cálculo do Consumo de Água</title>
+   <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<header>
+   <div>
+      <div class="cabecalho">
+         <a class="bd" href="/index.html">
+            <button class="button banco">
+               Página Inicial
+            </button>
+         </a>
+      </div>
+</header>
+
+<body>
+   <section class="container2">
+      <div id="abas">
+         <nav class="list">
+            <a href="#tableIrrigation">Sistemas de Irrigação</a>
+            <a href="#usersLogin">Usuários Cadastrados</a>
+            <a href="#culturas">Culturas de Plantio</a>
+         </nav>
+         <div id="tableIrrigation">
+            <table>
+               <thead>
+                  <tr>
+                     <th colspan="2">Método de Irrigação</th>
+                  </tr>
+                  <tr>
+                     <th>Sistema de Irrigação</th>
+                     <th>Vazao (L/h)</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th>Gotejamento</th>
+                     <th id="vGoteja">15</th>
+                  </tr>
+                  <tr>
+                     <th>Microaspersão</th>
+                     <th id="vMicro">120</th>
+                  </tr>
+                  <tr>
+                     <th>Pivô Central</th>
+                     <th id="vPivo">9500</th>
+                  </tr>
+                  <tr>
+                     <th>Aspersor</th>
+                     <th id="vAspersor">900</th>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="usersLogin">
+            <table>
+               <thead>
+                  <tr>
+                     <th>Usuário</th>
+                     <th>Senha</th>
+                     <th>Permissões</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th>padrão</th>
+                     <th></th>
+                  </tr>
+
+               </tbody>
+            </table>
+         </div>
+         <div id="culturas">
+            <table>
+               <thead>
+                  <tr>
+                     <th>Cultura</th>
+                     <th>Necessidade de água por ciclo</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th>Milho</th>
+                     <th>700ml</th>
+                  </tr>
+                  <tr>
+                     <th>Soja</th>
+                     <th>620ml</th>
+                  </tr>
+                  <tr>
+                     <th>Trigo</th>
+                     <th>500ml</th>
+                  </tr>
+                  <tr>
+                     <th>Café</th>
+                     <th>5.000ml</th>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+
+
+
+   </section>
+</body>
+
 </html>

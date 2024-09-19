@@ -143,8 +143,6 @@ footer {
 }
 
 
-
-
 div#abas nav a{ 
     display: inline-block;
     padding: 20px;
@@ -168,7 +166,7 @@ div#abas div:target{
 .container2{
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 50%;
     min-height: 400px;
     margin: 10em 8em 0 8em;
     gap: 10em;
@@ -176,4 +174,10 @@ div#abas div:target{
     opacity: 0.9;
     border-radius: 24px;
     padding: 2em;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: start;
+    width: 10%;
 }
