@@ -13,6 +13,9 @@ document.getElementById('calculadora').addEventListener('click', function () {
     
     // Ajuste do consumo de água com base no sistema de irrigação
     switch (sistema) {
+        case 'Selecione um sistema de irrigação':
+            alert('Selecione um sistema de irrigação válido.');
+            break;
         case 'Gotejamento':
             litrosAguaPorHectare = 800; 
             break;
@@ -32,6 +35,9 @@ document.getElementById('calculadora').addEventListener('click', function () {
 
     // Ajuste do fator multiplicador baseado no tipo de cultura
     switch (cultura) {
+        case 'Selecione um tipo de cultura':
+            alert('Selecione um tipo de cultura válido.');
+            break;
         case 'Milho':
             fatorCultura = 1.2;
             break;

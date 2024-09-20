@@ -19,6 +19,7 @@ body {
     opacity: 0.9;
     border-radius: 24px;
     padding: 2em;
+    margin-bottom: 5em;
 }
 
 .calculadora {
@@ -135,6 +136,7 @@ footer {
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
+    margin-top: 15px;
 }
 
 .banco {
@@ -174,11 +176,15 @@ div#abas div:target{
     opacity: 0.9;
     border-radius: 24px;
     padding: 2em;
+    margin-bottom: 5em;
 }
 
 .cabecalho {
     display: flex;
     align-items: start;
-    width: 10%;
+    width: 15%;
 }
 
+.banco-de-dados {
+    display: flex;  
+}
